@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom styles if needed */
+
+:root {
+  --brand-color: #4f46e5;
+}
+
+/* Example tweak: Scrollbar styling for dashboards */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* Example utility override (optional) */
+body {
+  @apply font-sans bg-gray-100 text-gray-800;
+}
